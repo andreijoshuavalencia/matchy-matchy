@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            
+            $('img').click(function() {
+                console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+                $(this).attr('src', $(this).attr('data-alt-src'));
+            });
+        });
+        
+    </script>
+    <title>Matchy Matchy</title>
+</head>
+<body>
+    <ul class="row">
+        <li><img src="./img/question.png" data-alt-src="./img/bike.webp"></li>
+        <li><img src="./img/question.png" data-alt-src="./img/car.webp"></li>
+        <li><img src="./img/question.png" data-alt-src="./img/plane.jpg"></li>
+        <li><img src="./img/question.png" data-alt-src="./img/boat.jpg"></li>
+    </ul>
+    <ul class="row">
+        <li><img src="./img/question.png" data-alt-src="./img/boat.jpg"></li>
+        <li><img src="./img/question.png" data-alt-src="./img/plane.jpg"></li>
+        <li><img src="./img/question.png" data-alt-src="./img/boat.jpg"></li>
+        <li><img src="./img/question.png" data-alt-src="./img/car.webp"></li>
+    </ul>
+    <ul class="row">
+        <li><img src="/img/question.png" data-alt-src="./img/bike.webp"></li>
+        <li><img src="./img/question.png" data-alt-src="./img/car.webp"></li>
+        <li><img src="./img/question.png" data-alt-src="./img/bike.webp"></li>
+        <li><img src="./img/question.png" data-alt-src="./img/plane.jpg"></li>
+    </ul>
+</body>
+</html>
